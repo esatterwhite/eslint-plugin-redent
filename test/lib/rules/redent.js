@@ -1,7 +1,7 @@
 'use strict'
 
 const {RuleTester} = require('eslint')
-const rule = require('../../../lib/rules/redent')
+const rule = require('../../../lib/rules/indent')
 
 const Suite = new RuleTester({
   parserOptions: {
@@ -15,7 +15,7 @@ const Suite = new RuleTester({
 
 Suite.run('redent', rule, {
   valid: [
-    {code: 'var x = {\n  a: 1\n, b: 2\n}\n'}
+    {code: 'var x = {\n  a: 1\n, b: 2\n}\nvar a = 1\n  + 5'}
   ]
 , invalid: [{
     code: 'var x = {\n  a: 1\n  , b: 2\n}\n'
