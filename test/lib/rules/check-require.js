@@ -23,6 +23,7 @@ Suite.run('check-require', rule, {
   valid: [
     {code: 'const a = require("http")'}
   , {code: fixture}
+  , {code: 'var a = require("eslint/lib/rules/utils/ast-utils")'}
   ]
 , invalid: [{
     code: 'const thing = require("biscuits")'
