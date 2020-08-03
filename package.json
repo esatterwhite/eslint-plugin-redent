@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/esatterwhite/eslint-plugin-redent.git"
+    "url": "git+https://github.com/esatterwhite/eslint-plugin-sensible.git"
   },
   "keywords": [
     "eslint",
@@ -18,9 +18,9 @@
   "author": "Eric Satterwhite <esatterwhite@wi.rr.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/esatterwhite/eslint-plugin-redent/issues"
+    "url": "https://github.com/esatterwhite/eslint-plugin-sensible/issues"
   },
-  "homepage": "https://github.com/esatterwhite/eslint-plugin-redent#readme",
+  "homepage": "https://github.com/esatterwhite/eslint-plugin-sensible#readme",
   "dependencies": {
     "lodash": "^4.17.15",
     "mocha": "^7.2.0",

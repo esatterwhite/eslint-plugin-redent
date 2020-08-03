@@ -1,4 +1,4 @@
-# eslint-plugin-sesnible
+# eslint-plugin-sensible
 
 Better comma first indent rules for eslint, and other sane defaults
 
