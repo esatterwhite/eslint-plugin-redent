@@ -6,6 +6,7 @@ Better comma first indent rules for eslint, and other sane defaults
 
 * redent: Fixes punctuation and operator indent to work better with comma first settings
 * check-require: Ensures that all packages that are `required` are installed in package.json or exist locally
+* grouped-require: Enforce sorted (by scope) require declarations within modules
 
 ```javascript
 'use strict'
