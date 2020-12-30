@@ -1,0 +1,8 @@
+{
+  "name": "test-package",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "biscuits": "^0.0.0"
+  }
+}
