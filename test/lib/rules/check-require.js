@@ -6,7 +6,7 @@ const fs = require('fs')
 const {RuleTester} = require('eslint')
 const rule = require('../../../lib/rules/check-require')
 
-const fixture_path = path.join(__dirname, '..', '..', 'fixture')
+const fixture_path = path.join(__dirname, '..', '..', 'fixtures', 'valid')
 const fixture = fs.readFileSync(fixture_path, 'utf8')
 
 {

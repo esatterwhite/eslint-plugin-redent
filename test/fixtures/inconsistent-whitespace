@@ -1,0 +1,78 @@
+const moment = require('moment')
+const {uuid} = require('uuidv4')
+
+const {pollSearchLinesAndVerify} = require('../../helpers')
+
+describe('Test salt endpoint', () => {
+  it('ingest a basic event', () => {
+    const app = uuid()
+    cy.log('Using app', app)
+    const host = uuid()
+    const file = uuid()
+    const currentMoment = moment()
+    const from = currentMoment.valueOf()
+    const service = uuid()
+
+    const body =
+      {
+        time: 3302046445
+      , func: 'state.highstate'
+      , payload: {
+          'retcode': 249
+        , 'fun': 'state.highstate'
+        , 'fun_args': [
+            'sunt'
+          , 'aut'
+          , 'expedita'
+          , 'tempora'
+          , 'earum'
+          ]
+        , 'id': host
+        , 'jid': 111
+        , 'return': {
+            'git_|-salt vim plugin 0 updated_|-https://github.com/answerbook/salt-vim.git_|-latest': {
+              comment: 'https://github.com/answerbook/salt-vim.git cloned to /Users/cooluser/.vim/pack/git-plugins/start/salt'
+            , name: 'https://github.com/answerbook/salt-vim.git'
+            , start_time: '22:32:14.000000'
+            , result: true
+            , duration: 66406.98088261299
+            , __run_num__: 0
+            , __sls__: 'config.vim'
+            , changes: {
+                'new': 'https://github.com/answerbook/salt-vim.git => /Users/cooluser/.vim/pack/git-plugins/start/salt'
+              , 'revision': {
+                  'new': '6ca9e3500cc39dd417b411435d58a1b720b331cc'
+                , 'old': 'None'
+                }
+              }
+            , __id__: 'placeat'
+            }
+          }
+        }
+      }
+
+    const expected = {
+      _app: 'Salt'
+    , _host: body.payload.id
+    , _file: 'Salt'
+    , _ingester: 'salt'
+    , _logtype: 'customapp'
+    // , _line: body.log
+    }
+
+    return cy.sendToIngesterFromSalt({
+      body: {lines: body}
+    })
+      .then(() => {
+        return pollSearchLinesAndVerify({
+          searchLinesOptions: {
+            qs: {
+              from
+            , query: `host:${host}`
+            }
+          }
+        , expectedLines: [expected]
+        })
+      })
+  })
+})
