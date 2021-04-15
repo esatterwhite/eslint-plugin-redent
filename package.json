@@ -30,12 +30,12 @@
   "homepage": "https://github.com/esatterwhite/eslint-plugin-sensible#readme",
   "dependencies": {
     "lodash": "^4.17.21",
-    "mocha": "^7.2.0",
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
     "@codedependant/release-config-npm": "^1.0.0",
     "eslint": "^7.22.0",
+    "mocha": "^8.3.2",
     "semantic-release": "^17.4.2"
   }
 }
