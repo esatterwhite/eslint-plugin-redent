@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v2.3.0...v2.3.1) (2021-04-15)
+
+
+### Chores
+
+* **deps**: mocha@8.3.2 [a060ab6](https://github.com/esatterwhite/eslint-plugin-sensible/commit/a060ab6fab1776f531a17b29a372b9372421347c) - Eric Satterwhite
+
 ## Changelog
 
 # [2.3.0](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v2.2.1...v2.3.0) (2021-03-18)
