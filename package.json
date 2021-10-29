@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/esatterwhite/eslint-plugin-sensible#readme",
   "dependencies": {
+    "esutils": "^2.0.3",
     "lodash": "^4.17.21",
     "requireindex": "^1.2.0"
   },
