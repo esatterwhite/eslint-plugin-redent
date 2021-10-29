@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v2.3.1...v3.0.0) (2021-10-29)
+
+
+### Bug Fixes
+
+* **indent**: add support for optional chaining syntax [89811fb](https://github.com/esatterwhite/eslint-plugin-sensible/commit/89811fb9e7f4d6e9a8946836864bb25b0df32613) - Eric Satterwhite, closes: [#12](https://github.com/esatterwhite/eslint-plugin-sensible/issues/12)
+
+
+### Chores
+
+* **deps**: eslint@8.1.0 [e876277](https://github.com/esatterwhite/eslint-plugin-sensible/commit/e87627706a242b7104dd96aa4565c6fd70e2f2dd) - Eric Satterwhite
+* **deps**: espree@9.0.0 [26e761b](https://github.com/esatterwhite/eslint-plugin-sensible/commit/26e761b8be95a38d594a163b4fc38be6030aba36) - Eric Satterwhite
+* **deps**: esutils@2.0.3 [1ae658e](https://github.com/esatterwhite/eslint-plugin-sensible/commit/1ae658e6b31554b01f00a20964107de3eedb390c) - Eric Satterwhite
+
+
+### **BREAKING CHANGES**
+
+* **deps:** eslint@8.1.0
+
 ## [2.3.1](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v2.3.0...v2.3.1) (2021-04-15)
 
 
