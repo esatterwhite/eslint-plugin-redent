@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.0...v3.0.1) (2022-09-18)
+
+
+### Chores
+
+* **dep**: functional-red-black-tree@1.0.1 [f729a24](https://github.com/esatterwhite/eslint-plugin-sensible/commit/f729a24f3e0d5af31a4ef881459aa19720a5f9f5) - Eric Satterwhite
+
 # [3.0.0](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v2.3.1...v3.0.0) (2021-10-29)
 
 
