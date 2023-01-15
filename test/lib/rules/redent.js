@@ -8,6 +8,7 @@ const rule = require('../../../lib/rules/indent')
 
 const fixture_path = path.join(__dirname, '..', '..', 'fixtures')
 const basic = fs.readFileSync(path.join(fixture_path, 'valid'), 'utf8')
+const range_error = fs.readFileSync(path.join(fixture_path, 'range-error'), 'utf8')
 const chaining = fs.readFileSync(path.join(fixture_path, 'optional-chaining'), 'utf8')
 const inconsistent_whitespace = fs.readFileSync(
   path.join(fixture_path, 'inconsistent-whitespace')
@@ -27,6 +28,7 @@ const Suite = new RuleTester({
 Suite.run('redent', rule, {
   valid: [
     {code: inconsistent_whitespace}
+  , {code: range_error}
   , {code: chaining}
   , {code: basic}
   ]

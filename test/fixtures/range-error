@@ -1,0 +1,18 @@
+'use strict'
+
+const async = {parallel: new Function(), reflect: new Function()}
+let meta = {}
+
+module.exports = function searchRequest(req, res) {
+
+  async.parallel(
+    async.reflect((callback) => { }),
+    function (err, esResults) {
+      esResults.forEach((next) => {
+        if (next.value)
+          meta = { ...meta, ...next.value.meta }
+      })
+    })
+}
+
+
