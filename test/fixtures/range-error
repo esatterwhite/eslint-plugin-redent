@@ -1,0 +1,13 @@
+'use strict'
+
+module.exports = function searchRequest(req, res) {
+
+  async.parallel(
+    async.reflect((callback) => { }),
+    function (err, esResults) {
+      esResults.forEach((next) => {
+        if (next.value)
+          meta = { ...meta, ...next.value.meta }
+      })
+    })
+}
