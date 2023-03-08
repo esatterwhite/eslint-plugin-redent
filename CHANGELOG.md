@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.1...v3.0.2) (2023-03-08)
+
+
+### Bug Fixes
+
+* **indent**: fixes string coercion bug in desired indent logic [d729b15](https://github.com/esatterwhite/eslint-plugin-sensible/commit/d729b1509566e3310ddb724239185fe1491e138a) - Eric Satterwhite, closes: [#14](https://github.com/esatterwhite/eslint-plugin-sensible/issues/14)
+
 ## [3.0.1](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.0...v3.0.1) (2022-09-18)
 
 
