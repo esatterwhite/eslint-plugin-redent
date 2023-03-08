@@ -9,6 +9,7 @@ const rule = require('../../../lib/rules/indent')
 const fixture_path = path.join(__dirname, '..', '..', 'fixtures')
 const basic = fs.readFileSync(path.join(fixture_path, 'valid'), 'utf8')
 const chaining = fs.readFileSync(path.join(fixture_path, 'optional-chaining'), 'utf8')
+const rangeerror = fs.readFileSync(path.join(fixture_path, 'range-error'), 'utf8')
 const inconsistent_whitespace = fs.readFileSync(
   path.join(fixture_path, 'inconsistent-whitespace')
 , 'utf8'
@@ -17,18 +18,33 @@ const inconsistent_whitespace = fs.readFileSync(
 const Suite = new RuleTester({
   parserOptions: {
     ecmaVersion: 2020
-  , sourceType: 'module'
+  , sourceType: 'script'
   }
 , rules: {
-    "indent": 0
+    "indent": 0,
   }
 })
 
-Suite.run('redent', rule, {
+Suite.run('sensible/indent', rule, {
   valid: [
     {code: inconsistent_whitespace}
   , {code: chaining}
   , {code: basic}
+  , {
+      code: rangeerror
+    , options: [2, {
+        "FunctionExpression": {
+          "parameters": "first"
+        },
+        "FunctionDeclaration": {
+          "parameters": "first",
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": "first"
+        },
+      }]
+    }
   ]
 , invalid: [{
     code: 'var x = {\n  a: 1\n  , b: 2\n}\n'
