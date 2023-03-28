@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.2...v3.0.3) (2023-03-28)
+
+
+### Chores
+
+* **dep**: vendor the escape-string-regexp package [3b358b3](https://github.com/esatterwhite/eslint-plugin-sensible/commit/3b358b35ed8e58eba2ae42312cd63524c3a29048) - Eric Satterwhite
+
 ## [3.0.2](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.1...v3.0.2) (2023-03-08)
 
 
