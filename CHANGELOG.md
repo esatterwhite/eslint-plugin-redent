@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.3...v3.1.0) (2023-12-12)
+
+
+### Features
+
+* **check-require**: add support for node namespaced modules [d432775](https://github.com/esatterwhite/eslint-plugin-sensible/commit/d43277511e024885c11c76f1d502899d6b0e2524) - Eric Satterwhite
+
 ## [3.0.3](https://github.com/esatterwhite/eslint-plugin-sensible/compare/v3.0.2...v3.0.3) (2023-03-28)
 
 
